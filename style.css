@@ -1,0 +1,217 @@
+.main-container{
+display:flex;
+height:100vh;
+align-items:center;
+justify-content:space-between;
+padding:40px;
+}
+
+/* LEFT SIDE IMAGE */
+
+.left{
+flex:1;
+text-align:center;
+}
+
+.photo{
+width:100%;
+max-width:1000px;
+border-radius:20px;
+box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+/* RIGHT SIDE CONTENT */
+
+.right{
+flex:1;
+text-align:center;
+color:white;
+}
+
+/* CAKE */
+
+.cake{
+font-size:70px;
+position:relative;
+cursor:pointer;
+margin-top:20px;
+}
+
+.candle{
+font-size:30px;
+position:absolute;
+top:-15px;
+left:40%;
+animation:flame 0.6s infinite alternate;
+}
+
+@keyframes flame{
+from{opacity:1;}
+to{opacity:0.5;}
+}
+
+/* DARK OVERLAY */
+
+.overlay{
+background:rgba(0,0,0,0.7);
+height:100vh;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+text-align:center;
+color:white;
+}
+
+/* HAPPY BIRTHDAY TITLE */
+
+.birthday{
+font-family:'Bungee',cursive;
+font-size:50px;
+
+position:absolute;
+top:0;
+left:50%;
+transform:translateX(-50%);
+
+margin-top:10px;
+
+color:#f6f2f2;
+
+text-shadow:
+0 0 10px rgb(249, 255, 192),
+0 0 20px rgb(12, 12, 12),
+0 0 40px rgb(39, 38, 38);
+}
+
+
+
+/* MESSAGE */
+
+#letter{
+max-width:400px;
+margin:20px;
+font-size:18px;
+}
+
+/* BUTTON */
+
+.btn{
+padding:14px 28px;
+font-size:18px;
+font-weight:bold;
+
+border:none;
+border-radius:30px;
+
+background:#131313;
+color:white;
+
+cursor:pointer;
+margin:10px;
+}
+
+/* GIFT BOX */
+
+.gift{
+font-size:120px;
+cursor:pointer;
+
+animation:bounce 1s infinite;
+}
+
+/* “Tap the gift” text below the gift emoji */
+#giftBox p {
+  font-size: 22px;                        /* slightly bigger font */
+  font-weight: bold;                       /* bold text */
+  color: #ffffff;                          /* text color */
+  background: rgba(4, 4, 4, 0.8);    /* semi-transparent pink background */
+  padding: 8px 16px;                       /* spacing around text */
+  border-radius: 10px;                      /* slightly rounded corners */
+  display: inline-block;                   /* only wrap around text */
+  margin-top: 12px;                        /* space below the gift emoji */
+  text-align: center;
+}
+
+@keyframes bounce{
+0%{transform:translateY(0)}
+50%{transform:translateY(-10px)}
+100%{transform:translateY(0)}
+}
+
+/* CAKE */
+
+.cake{
+font-size:80px;
+position:relative;
+cursor:pointer;
+margin:20px;
+}
+
+.candle{
+font-size:30px;
+position:absolute;
+top:-15px;
+left:40%;
+animation:flame 0.6s infinite alternate;
+}
+
+@keyframes flame{
+from{opacity:1;}
+to{opacity:0.5;}
+}
+.photo{
+  width: 300px;
+  display: block;
+  margin: 20px auto;
+  border:10px;
+}
+
+/* VIDEO */
+
+/*#birthdayVideo{
+height:80vh;
+width:auto;
+max-width:90%;
+border-radius:15px;
+box-shadow:0 0 20px rgba(0,0,0,0.8);
+}
+/* HIDDEN */
+
+.hidden{
+display:none;
+}
+
+/* HEART EFFECT */
+
+.heart{
+position:absolute;
+font-size:24px;
+
+animation:heartpop 2s linear;
+}
+
+@keyframes heartpop{
+0%{transform:scale(0)}
+100%{transform:scale(3);opacity:0}
+}
+
+/* FIREWORK */
+
+.spark{
+position:absolute;
+
+width:6px;
+height:6px;
+
+background:yellow;
+border-radius:50%;
+
+animation:explode 1s linear;
+}
+
+@keyframes explode{
+0%{transform:scale(0)}
+100%{transform:scale(4);opacity:0}
+}
